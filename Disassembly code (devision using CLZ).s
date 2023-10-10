@@ -1,10 +1,9 @@
 00000000 <divisor>:
-    0:        0004            c.addi4spn x9 0
+    0:        0008            c.addi4spn x10 0
     2:        0000            c.addi4spn x8 0
 
-00000004 <number>:
-    4:        0010            c.addi4spn x12 0
-    6:        0000            c.addi4spn x8 0
+00000004 <dividend>:
+    4:        00000013        addi x0 x0 0
 
 00000008 <main>:
     8:        00000517        auipc x10 0x0 <divisor>

@@ -6,14 +6,14 @@ str2:     .string "\nremainder = "
 divisor:
     .word 4
 
-number:
+dividend:
     .word 16
 
     .globl main
 main:
     # Load data
     lw    a0, divisor     # Load divisor into a0
-    lw    t0, number      # Load number into t3
+    lw    t0, dividend      # Load dividend into t0
 
     # Call count_leading_zeros function
     call  count_leading_zeros
